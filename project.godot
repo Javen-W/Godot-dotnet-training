@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="Godot Dotnet Training"
-config/features=PackedStringArray("4.3", "Forward Plus")
+run/main_scene="res://src/scenes/root/Root.tscn"
+config/features=PackedStringArray("4.3", "C#", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+ExampleSignalBus="*res://src/autoloads/signal_buses/ExampleSignalBus.cs"
+Logger="*res://src/autoloads/Logger.cs"
 
 [dotnet]
 
