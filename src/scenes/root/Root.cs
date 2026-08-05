@@ -15,6 +15,10 @@ namespace GodotDotnetTraining
 
 			// Emit an example signal.
 			ExampleSignalBus.EmitExample(777);
+
+			// Create an example item instance.
+			var itemData = ItemDataFactory.CreateItemData(ItemID.EXAMPLE_ITEM);
+			Logger.Info($"Item data created: {itemData.Name}");
 		}
 
 		// Called every frame. 'delta' is the elapsed time since the previous frame.

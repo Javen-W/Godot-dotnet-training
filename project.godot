@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 ExampleSignalBus="*res://src/autoloads/signal_buses/ExampleSignalBus.cs"
 Logger="*res://src/autoloads/Logger.cs"
+ResourceRegistry="*res://src/autoloads/ResourceRegistry.cs"
 
 [dotnet]
 

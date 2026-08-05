@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemDef" load_steps=3 format=3 uid="uid://bryngxtnirtb4"]
+
+[ext_resource type="PackedScene" uid="uid://cvcumosev10o3" path="res://src/scenes/items/ExampleItem/ExampleItem.tscn" id="1_lpaji"]
+[ext_resource type="Script" path="res://src/defs/item/ItemDef.cs" id="1_yfpba"]
+
+[resource]
+script = ExtResource("1_yfpba")
+ItemID = 1
+Name = "Example Item"
+EquippedModel = ExtResource("1_lpaji")
