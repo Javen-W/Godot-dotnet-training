@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsdjkytlwr412"]
+
+[ext_resource type="Script" path="res://src/scenes/hex_tile/HexTile.cs" id="1_s5s5i"]
+
+[node name="HexTile" type="Node3D"]
+script = ExtResource("1_s5s5i")
+Size = 5.0

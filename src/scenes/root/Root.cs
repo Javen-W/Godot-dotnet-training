@@ -19,6 +19,18 @@ namespace GodotDotnetTraining
 			// Create an example item instance.
 			var itemData = ItemDataFactory.CreateItemData(ItemID.EXAMPLE_ITEM);
 			Logger.Info($"Item data created: {itemData.Name}");
+
+			// Create an example hex tile instance.
+			foreach (var axialCoord in HexMath.AxialSpiral(Vector2I.Zero, 2))
+			{
+				var hexTile = new HexTile()
+				{
+					Size = 1.0f,
+					AxialCoord = axialCoord,
+					// BaseType = HexTileBaseType.Grass,
+				};
+				AddChild(hexTile);
+			}
 		}
 
 		// Called every frame. 'delta' is the elapsed time since the previous frame.
